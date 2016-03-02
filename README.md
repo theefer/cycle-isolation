@@ -3,7 +3,7 @@
 A few code sample of ideas for native CycleJS component encapsulation,
 instead of the global nature of the current drivers.
 
-See __ for details.
+See https://github.com/cyclejs/core/issues/259 for details.
 
 ## Install
 
