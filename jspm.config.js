@@ -1,11 +1,18 @@
 SystemJS.config({
+  transpiler: "plugin-babel",
+  packages: {
+    "cycle-encapsulated": {
+      "main": "main.js"
+    }
+  }
+});
+
+SystemJS.config({
   packageConfigPaths: [
     "npm:@*/*.json",
     "npm:*.json",
     "github:*/*.json"
   ],
-  transpiler: "plugin-babel",
-
   map: {
     "assert": "github:jspm/nodelibs-assert@0.2.0-alpha",
     "core": "npm:@cycle/core@6.0.3",
@@ -17,11 +24,7 @@ SystemJS.config({
     "vdom-virtualize": "npm:vdom-virtualize@1.0.5",
     "virtual-dom": "npm:virtual-dom@2.1.1"
   },
-
   packages: {
-    "cycle-encapsulated": {
-      "main": "main.js"
-    },
     "npm:@cycle/dom@9.1.0": {
       "map": {
         "hyperscript-helpers": "npm:hyperscript-helpers@2.0.3",
@@ -47,6 +50,7 @@ SystemJS.config({
     "npm:global@4.3.0": {
       "map": {
         "min-document": "npm:min-document@2.18.0",
+        "node-min-document": "npm:min-document@2.18.0",
         "process": "npm:process@0.5.2"
       }
     },
